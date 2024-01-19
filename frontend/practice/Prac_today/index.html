@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Message Form</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function sendMessage() {
+  var message = document.getElementById('message').value;
+  // Here you would typically send the message to a server
+  console.log('Message to send:', message);
+  // For demonstration, we'll just clear the message
+  document.getElementById('message').value = '';
+  alert('Message sent: ' + message);
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+  <div class="input-form">
+    <label for="message">메시지를 입력하세요:</label>
+    <input type="text" id="message" placeholder="Enter message">
+    <button onclick="sendMessage()">보내기</button>
+  </div>
+</div>
+
+</body>
+</html>
