@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red and Green Boxes</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .green {
+    background-color: #008000; /* Or use the specific green color from your image */
+    width: calc(30% - 20px); /* Adjusted for three boxes to fit in the same row */
+  }
+
+  .red {
+    background-color: #800000; /* Or use the specific red color from your image */
+    width: calc(100% - 20px); /* Adjusting for margin */
+  }
+
+  /* For the full-width green box */
+  .full-width {
+    width: 100%; /* Adjusted for a full-width box, margin not needed here */
+  }
+
+  /* For the smaller red boxes at the bottom, making them square */
+  .small-box {
+    width: 100px; /* Fixed width for square */
+    height: 100px; /* Fixed height for square */
+  }
+</style>
+</head>
+<body>
+    <h2>Image Tag</h2>
+    <p><a href="https://picsum.photos/">https://picsum.photos/</a></p>
+    
+<div class="container">
+  <!-- Full-width green boxes -->
+  <div class="box green full-width">Header</div>
+  
+  <!-- Three green boxes in a row -->
+  <div class="box green">Box</div>
+  <div class="box green">Box</div>
+  <div class="box green">Box</div>
+  
+  <!-- Full-width green box -->
+  <div class="box green full-width">Content</div>
+  
+  <!-- Full-width red boxes -->
+  <div class="box red full-width">Title</div>
+  <div class="box red full-width">Title</div>
+  <div class="box red full-width">Title</div>
+  
+  <!-- Smaller red square boxes -->
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+  <div class="box red small-box">Item</div>
+</div>
+
+</body>
+</html>
